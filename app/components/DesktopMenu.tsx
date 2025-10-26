@@ -6,7 +6,7 @@ const DesktopMenu = () => {
   return (
     <div className="hidden md:flex justify-between items-center">
       <Logo />
-      <ol className="flex gap-5 text-secondary-foreground lg:font-medium  text-xl z-10 justify-between items-center  ">
+      <ol className="flex gap-5 text-muted-foreground lg:font-medium  text-xl z-10 justify-between items-center  ">
         {navItems.map((items, idx) => (
           <li key={idx} className="hover:text-primary cursor-pointer">
             {items}

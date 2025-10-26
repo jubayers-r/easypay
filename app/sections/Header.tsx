@@ -1,12 +1,14 @@
+// import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
+import { universalSideMargin } from "../page";
 
-const HeaderSection = () => {
+const Header = () => {
   return (
-    <div className="bg-[url('/hero-bg.png')] bg-no-repeat bg-cover bg-center px-7  lg:px-40 mx-5 my-5 rounded-3xl  h-[90vh]">
+    <div className={`bg-[url('/hero-bg.png')] bg-no-repeat bg-cover bg-center ${universalSideMargin} rounded-3xl`}>
       <Navbar />
       {/* <Hero /> */}
     </div>
   );
 };
 
-export default HeaderSection;
+export default Header;

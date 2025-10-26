@@ -1,6 +1,6 @@
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import { contactUsBtn, navItems } from "./Navbar";
+import { navItems } from "./Navbar";
 import Logo from "./Logo";
 import { Button } from "@/components/ui/button";
 
@@ -16,7 +16,7 @@ export function MobileMenu() {
         </SheetTrigger>
         <SheetContent side="right" className="p-6">
           <nav>
-            <ol className="flex flex-col gap-4 text-lg font-medium text-secondary-foreground">
+            <ol className="flex flex-col gap-4 text-lg font-medium text-muted-foreground">
               {navItems.map((item) => (
                 <li key={item} className="hover:text-primary cursor-pointer">
                   {item}
