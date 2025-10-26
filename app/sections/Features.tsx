@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
-// import LogoMarquee from "./LogoMarquee";
+import { universalSectionPadding, universalSideMargin } from "../page";
 
 const cardItems = [
   {
@@ -41,15 +41,20 @@ const cardItems = [
 
 const Features = () => {
   return (
-    <div className="my-30 place-items-center">
-      <h3 className="text-secondary-foreground font-bold text-xl uppercase">
-        Features
-      </h3>
-      <h1 className="text-2xl lg:text-5xl/tight  font-bold text-center ">
-        Why choose Easy Pay for <br /> effortless payments?
-      </h1>
+    <div>
+      {/* text part */}
+      <div className="place-items-center">
+        <h3 className="text-secondary-foreground font-bold text-xl uppercase">
+          Features
+        </h3>
+        <h1 className="text-2xl lg:text-5xl/tight  font-bold text-center ">
+          Why choose Easy Pay for <br /> effortless payments?
+        </h1>
+      </div>
       {/* cards */}
-      <div className="grid md:grid-cols-2 xl:grid-cols-4 w-full gap-7 my-7 lg:my-15 place-items-center">
+      <div
+        className={`grid md:grid-cols-2 xl:grid-cols-4 w-full gap-7 my-7 lg:my-15 place-items-center ${universalSideMargin} ${universalSectionPadding}`}
+      >
         {cardItems.map((item, idx) => (
           <Card
             key={idx}
@@ -70,7 +75,6 @@ const Features = () => {
           </Card>
         ))}
       </div>
-      {/* <LogoMarquee/> */}
     </div>
   );
 };

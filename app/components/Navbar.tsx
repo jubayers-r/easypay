@@ -5,7 +5,7 @@ export const navItems = ["Features", "Pricing", "Security", "Benefits"];
 
 const Navbar = () => {
   return (
-    <div className="pt-5 z-10 ">
+    <div className="py-5 ">
       <DesktopMenu />
       <MobileMenu />
     </div>
