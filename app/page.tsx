@@ -1,4 +1,4 @@
-// import Footer from "./components/Footer";
+import Footer from "./sections/Footer";
 import Features from "./sections/Features";
 import Header from "./sections/Header";
 import HowItWorks from "./sections/HowItWorks";
@@ -23,7 +23,8 @@ export default function Home() {
         <Security/>
         <Pricing/>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
+
