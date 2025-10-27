@@ -11,7 +11,7 @@ const FooterCard = () => {
         </h3>
         <p className="text-xl text-white md:w-[80%] mx-auto hidden md:block">
           Ready for hassle-free, secure payments anywhere in the world? Start
-          using Monks Pay today it's fast, free, and focused on keeping your
+          using Monks Pay today it&apos;s fast, free, and focused on keeping your
           transactions secure!
         </p>
       </CardContent>

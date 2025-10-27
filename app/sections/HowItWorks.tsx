@@ -8,6 +8,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { universalSectionPadding, universalSideMargin } from "../page";
 import Image from "next/image";
+import { universalHeadline, universalSecHeadline } from "./Features";
 
 const HowItWorks = () => {
   const cardItems = [
@@ -33,11 +34,11 @@ const HowItWorks = () => {
       className={`bg-secondary ${universalSideMargin} ${universalSectionPadding} py-20 text-center  md:text-left`}
     >
       <div>
-        <h3 className="uppercase text-secondary-foreground font-bold my-3 ">
+        <h3 className={` ${universalHeadline} my-3 `}>
           How it works
         </h3>
         <div className="flex flex-col md:flex-row gap-5 md:justify-between md:place-items-end   place-items-center">
-          <h1 className="text-2xl lg:text-5xl/tight font-bold">
+          <h1 className={`${universalSecHeadline} md:text-left`}>
             Make payments, transfers, and <br /> more in 3 simple steps
           </h1>
           <Button size={"lg"} className="hidden lg:flex">
