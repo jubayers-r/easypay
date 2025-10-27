@@ -5,6 +5,7 @@ import HowItWorks from "./sections/HowItWorks";
 import LogoMarquee from "./sections/LogoMarquee";
 import Pricing from "./sections/Pricing";
 import Security from "./sections/Security";
+import Testimonials from "./sections/Testimonials";
 
 export const universalSideMargin = "px-7 lg:px-30";
 export const universalSectionPadding = "px-5";
@@ -22,6 +23,7 @@ export default function Home() {
         <HowItWorks />
         <Security/>
         <Pricing/>
+        <Testimonials/>
       </main>
       <Footer />
     </div>
