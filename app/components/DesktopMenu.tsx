@@ -13,7 +13,7 @@ const DesktopMenu = () => {
           </li>
         ))}
       </ol>
-      <Button variant={"default"} className="hidden lg:flex">
+      <Button variant={"default"} className="hidden lg:flex z-100">
         Contact Us
       </Button>
       <Button
