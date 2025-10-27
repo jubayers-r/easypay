@@ -39,15 +39,18 @@ const cardItems = [
   },
 ];
 
+export const universalHeadline =
+  "text-secondary-foreground font-bold text-xl uppercase";
+export const universalSecHeadline =
+  "text-2xl md:text-3xl/tight lg:text-5xl/tight font-bold text-center ";
+
 const Features = () => {
   return (
     <div>
       {/* text part */}
       <div className="place-items-center">
-        <h3 className="text-secondary-foreground font-bold text-xl uppercase">
-          Features
-        </h3>
-        <h1 className="text-2xl lg:text-5xl/tight  font-bold text-center ">
+        <h3 className={`${universalHeadline}`}>Features</h3>
+        <h1 className={`${universalSecHeadline}`}>
           Why choose Easy Pay for <br /> effortless payments?
         </h1>
       </div>

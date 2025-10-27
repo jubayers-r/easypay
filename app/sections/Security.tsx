@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { universalSideMargin } from "../page";
-import Image from "next/image";
+import { universalHeadline, universalSecHeadline } from "./Features";
 
 const Security = () => {
   const cardItems = [
@@ -56,11 +56,11 @@ const Security = () => {
 
   return (
     <div className={`${universalSideMargin} my-30 text-center md:text-left`}>
-      <h3 className="text-secondary-foreground text-xl font-semibold">
-        Security
-      </h3>
+      <h3 className={`${universalHeadline}`}>Security</h3>
       <div className=" md:flex justify-between ">
-        <h1 className="text-xl md:text-3xl/tight lg:text-5xl/tight font-bold md:w-[60%] lg:w-[70%]">
+        <h1
+          className={`${universalSecHeadline} md:text-left md:w-[60%] lg:w-[70%]`}
+        >
           {" "}
           We protect your money at <br /> every step with Easy Pay
         </h1>
