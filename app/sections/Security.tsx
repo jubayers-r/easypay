@@ -71,7 +71,7 @@ const Security = () => {
       </div>
 
       <Card
-        className={`bg-[url('/hero-bg.png')] bg-center md:bg-top-left bg-no-repeat bg-cover my-10 grid md:grid-cols-2 lg:grid-cols-3 p-5 shadow-xl`}
+        className={`bg-[url('/hero-bg.png')] bg-center md:bg-top-left bg-no-repeat bg-cover my-10 grid md:grid-cols-2 lg:grid-cols-3 `}
       >
         {cardItems.map((item, idx) => (
           <div key={idx} className="max-w-sm py-7">
