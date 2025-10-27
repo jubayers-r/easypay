@@ -28,7 +28,7 @@ const Pricing = () => {
     btnType: ButtonVariant;
   }[] = [
     {
-      title: "Free Plan",
+      title: "Free",
       description: "Free for personal payments",
       price: "0",
       features: {
@@ -85,7 +85,7 @@ const Pricing = () => {
       </h1>
       <div className="grid lg:grid-cols-3 place-items-center my-10 gap-5 bg-[url('/gaussian.png')] bg-no-repeat bg-center">
         {cardItems.map((item, idx) => (
-          <Card key={idx} className={`text-left  md:max-w-lg ${item.bgColor}`}>
+          <Card key={idx} className={`text-left md:max-w-lg ${item.bgColor}`}>
             <CardHeader>
               <CardTitle>{item.title}</CardTitle>
               <CardDescription>{item.description}</CardDescription>
@@ -108,7 +108,7 @@ const Pricing = () => {
             </CardContent>
             <CardFooter>
               <Button variant={`${item.btnType}`} className="w-full ">
-                Get Advance Plan
+                Get {item.title} Plan
               </Button>
             </CardFooter>
           </Card>
